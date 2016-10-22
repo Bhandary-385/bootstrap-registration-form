@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Registration</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="assets/bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+<div class="container-fluid">
+    <section class="container">
+		<div class="container-page">
+            <div class="col-md-12">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+			<div class="col-md-6"  id="box-modified">
+				<h3 class="dark-grey">Registration</h3>
+				<form id="registration_form" action="" method="post">
+				<div class="form-group col-lg-12">
+					<!--label for="username">Username</label-->
+					<input type="text" name="username" class="form-control" id="username" value="" placeholder="Username">
+                    <span id="username_error_message"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<!--label for="useremail">Email Address</label-->
+					<input type="email" name="useremail" class="form-control" id="useremail" value="" placeholder="some@mail.com">
+                    <span id="email_error_message"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<!--label for="userfirstname">First Name</label-->
+					<input type="text" name="userfirstname" class="form-control" id="userfirstname" value="" placeholder="First Name">
+                    <span id="firstname_error_message"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<!--label for="userlastname">Last Name</label-->
+					<input type="text" name="userlastname" class="form-control" id="userlastname" value="" placeholder="Last Name">
+                    <span id="lastname_error_message"></span>
+				</div>
+				
+                <div class="form-group col-lg-12" id="file">
+					<!--label for="userimage">Upload Photo</label-->
+					<input type="file" name="userimage" class="form-control" id="userimage" value="">
+				</div>
+                    
+				<div class="form-group col-lg-12">
+					<!--label for="userpassword">Password</label-->
+					<input type="password" name="userpassword" class="form-control" id="userpassword" value="" placeholder="Password">
+                    <span id="password_error_message"></span>
+				</div>
+				
+				<div class="form-group col-lg-12">
+					<!--label for="userconfirmpassword">Confirm Password</label-->
+					<input type="password" name="userconfirmpassword" class="form-control" id="userconfirmpassword" value="" placeholder="Confirm Password">
+                    <span id="confirmpassword_error_message"></span>
+				</div>	
+                
+				<div class="form-group col-sm-12">
+					<input type="checkbox" style="margin-top:4%;margin-right:2%" id="newsletter" name="checkbox" value="newsletter" />Sign up for our newsletter
+				</div>
+                <div class="form-group col-sm-12">
+					<div class="g-recaptcha" data-sitekey="6LeG-gkUAAAAAGWpWYEy9A8oDqAjnEgRv_n9qxhK"></div>
+				</div>
+            <input type="submit" class="btn btn-primary" value="Register" name="register" style="margin-left: 36%;margin-bottom: 4%;">
+
+			</form>
+			</div>
+		    <div class="col-md-1"></div>
+			<div class="col-md-5" id="box-modified-1">
+                				<h3 class="dark-grey">Preview</h3>
+				<div class="form-group col-lg-12">
+					<label>Username: </label> <span id="uname"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<label>Email Address: </label> <span id="uemail"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<label>First Name: </label> <span id="fname"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<label>Last Name: </label> <span id="lname"></span>
+				</div>
+                
+                <div class="form-group col-lg-12">
+					<!--label>Image: </label--> <span id="img"></span>
+                    <div id="imagePreview"></div>
+				</div>
+				
+				<div class="form-group col-sm-12">
+				    Sign up for our newsletter: <span id="news"></span>
+				</div>
+				</div>
+                </div>
+                <div class="col-md-2"></div> 
+			</div>
+		</div>
+	</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/bootstrap/js/script.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+</html>
