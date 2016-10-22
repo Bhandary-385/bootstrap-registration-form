@@ -1,6 +1,9 @@
 # bootstrap-registration-form
 Bootstrap Registration option with Validations using jQuery and Preview box for information
 
+Author: Nadeem Ahmad
+Web URL: http://rlove.in/registration-form/
+
 Registration form with validation and preview option, additionally you can embed google captcha with it.
 
 Functions are written in jQuery and you are going to find it very easy to use. 
